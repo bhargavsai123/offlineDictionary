@@ -14,8 +14,8 @@ export default class App extends React.Component {
       isSearchPressed: true,
     };
   }
-  getWord = (word) => {
-    var searchKeyword = word.toLowerCase();
+  getWord = (text) => {
+    var text = text.toLowerCase();
     try {
       var word = dictionary[text]["word"];
       var lexicalCategory = dictionary[text]["lexicalCategory"];
